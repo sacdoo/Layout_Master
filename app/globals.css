@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-paper-50 text-ink-900 antialiased;
+  font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
+}
+
+.bg-noise {
+  background-image: radial-gradient(rgba(10, 12, 18, 0.12) 1px, transparent 0),
+    radial-gradient(rgba(10, 12, 18, 0.08) 1px, transparent 0);
+  background-position: 0 0, 14px 14px;
+  background-size: 28px 28px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
